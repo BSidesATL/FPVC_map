@@ -4,7 +4,7 @@
 	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-	<title>FPV Chat Member Map</title>
+	<title>BSides Atlanta Community Map</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet">
 	<link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
   		<!--[if lte IE 8]>
@@ -46,15 +46,15 @@
   		</head>
   		<body>
   			<!--ADD THE FORM EMBEDURL BELOW-->
-  			<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/e/1FAIpQLSe-4qtJgmjo5Ev1U9VMjQy0YEakprUso5N1J4DA9xxU-lHDHw/viewform?embedded=true">
+  			<meta itemprop="embedUrl" content="https://docs.google.com/forms/d/e/1HfXi0q7cAPDd-tH5kJDPdlRSAiNC5Rjp9M9OkFUP6cE/viewform?embedded=true">
 
   			<!--ADD THE FORM RESPONSE ACTION HERE, WITH A REDIRECT-->
   			<script type="text/javascript">var submitted=false;</script>
-  			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://kernelsndrs.github.io/FPVC_map/results/';}"></iframe>
-  			<form action="https://docs.google.com/forms/d/e/1FAIpQLSe-4qtJgmjo5Ev1U9VMjQy0YEakprUso5N1J4DA9xxU-lHDHw/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
+  			<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='http://bsidesatl.github.io/bsidesatl_map/results/';}"></iframe>
+  			<form action="https://docs.google.com/forms/d/e/1HfXi0q7cAPDd-tH5kJDPdlRSAiNC5Rjp9M9OkFUP6cE/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true;">
   				<div class="container">
   					<div class="jumbotron starter-template">
-  						<h1>FPV Chat Member Map</h1>
+  						<h1>BSides Atlanta Community Map</h1>
   					</div>
   					<div class="starter-template">
   						<h2><em>(1) </em>Where you at?<h2>
@@ -67,7 +67,7 @@
   								</span>
   							</div>
   							<div class="starter-template">
-  								<h2><em>(2) </em>What's your FPV chat username?<h2>
+  								<h2><em>(2) </em>What's your BSides Atlanta username?<h2>
   									<input class="form-control" name="entry.299528647" value="" id="entry_299528647" placeholder="Username">
   								</div>
 				<!-- ADD GOOGLEFORM-RELATED INPUTS HERE, ALL HIDDEN.
@@ -87,7 +87,7 @@
 				<h2>That's it! Thanks!<h2>
 					<input type="submit" name="submit" value="Submit" class="btn-lg btn-success">
 				<!-- Attribution
-				a repurposed @vtcraghead joint, modified by @dmofot, again by @kernelsndrs
+				a repurposed @vtcraghead joint, modified by @dmofot, again by @kernelsndrs, again by @bsidesatl
 			-->
 
 				<h6>I have no clue how I got here, just show me the <a href="results/" title="map">map</a></h6>
@@ -147,7 +147,7 @@
 		$('#entry_126339808').attr('value', x);
 
 		// Build the map
-		L.mapbox.accessToken = 'pk.eyJ1Ijoia2VybmVsc25kcnMiLCJhIjoiY2luOTZhMDg3MW1rZHRta3NpbHo5dXc4YiJ9.fe9jvqMz6sZh_h8Yx9olfw';
+		L.mapbox.accessToken = 'pk.eyJ1IjoiYnNpZGVzYXRsIiwiYSI6ImNrODk0bG8zNDAzN3IzcXZ1Y2R3Y3Qya2wifQ.zWpwcsPTCYMVxTbRtOc36w';
 		
 		var map = L.mapbox.map('map', 'mapbox.streets', {
 			scrollWheelZoom:false,
