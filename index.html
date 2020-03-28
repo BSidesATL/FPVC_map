@@ -143,8 +143,8 @@
 		var y = 37.09024;
 		var x = -95.71289;
 		var z = 6;
-		$('#entry_375895535').attr('value', y);
-		$('#entry_126339808').attr('value', x);
+		$('#entry_2137188857').attr('value', y);
+		$('#entry_1907429990').attr('value', x);
 
 		// Build the map
 		L.mapbox.accessToken = 'pk.eyJ1IjoiYnNpZGVzYXRsIiwiYSI6ImNrODk0bG8zNDAzN3IzcXZ1Y2R3Y3Qya2wifQ.zWpwcsPTCYMVxTbRtOc36w';
@@ -163,8 +163,8 @@
 
 		// Update these values as the map gets dragged around
 		map.on('moveend', function(event) {
-			$('#entry_375895535').attr('value', map.getCenter().lat);
-			$('#entry_126339808').attr('value', map.getCenter().lng);
+			$('#entry_2137188857').attr('value', map.getCenter().lat);
+			$('#entry_1907429990').attr('value', map.getCenter().lng);
 		});
 
 		// Grab IP location from freegeoip API
@@ -174,8 +174,8 @@
 				x = json.longitude;
 				z = 7
 				// Set form lat/lon fields from map center location
-				$('#entry_375895535').attr('value', y);
-				$('#entry_126339808').attr('value', x);
+				$('#entry_2137188857').attr('value', y);
+				$('#entry_1907429990').attr('value', x);
 				map.panTo([y, x]);
 			}
 		});
